@@ -5,10 +5,12 @@ Vercel + GitHub (no secrets in this repo)
    Run:  gh auth refresh -h github.com -s workflow
    Complete the browser/device flow, then push again.
 
-1) GitHub repository secrets (Settings → Secrets and variables → Actions):
-   - VERCEL_TOKEN      → from Ozdesk vault key "vercel.token"
-   - VERCEL_ORG_ID     → Vercel dashboard → Team / User settings
-   - VERCEL_PROJECT_ID → Project → Settings → General
+1) GitHub repository secrets — automated from vault (run locally after `gh auth login`):
+      npm run sync-vercel-secrets
+   Or set manually (Settings → Secrets and variables → Actions):
+   - VERCEL_TOKEN      → vault "vercel.token"
+   - VERCEL_ORG_ID     → Vercel team/account id
+   - VERCEL_PROJECT_ID → Vercel project id (script creates project "automore" if missing)
 
 2) Vercel project: import the GitHub repo, framework Next.js, root directory "/",
    set Production env: NEXT_PUBLIC_SITE_URL=https://automore.com.au
