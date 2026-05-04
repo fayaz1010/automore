@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "source": "wikimedia_commons",
+  "filePage": "https://commons.wikimedia.org/wiki/File%3ABYD%20Atto%203%201X7A6495.jpg",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/BYD_Atto_3_1X7A6495.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+  "title": "File:BYD Atto 3 1X7A6495.jpg",
+  "mime": "image/jpeg",
+  "width": 4065,
+  "height": 2713,
+  "sha256": "bad390a92da64370f1bb56659d7d2c60530b62eb5040818296948e162224af91",
+  "alt": "BYD Atto 3 electric SUV",
+  "licenseShort": "CC BY-SA 4.0",
+  "artist": "<a href=\"//commons.wikimedia.org/wiki/User:Alexander-93\" title=\"User:Alexander-93\">Alexander Migl</a>",
+  "credit": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+  "note": "Verify licence on file page before commercial use; attribute per Commons terms."
+}

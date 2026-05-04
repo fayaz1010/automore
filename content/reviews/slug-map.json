@@ -1,0 +1,13 @@
+{
+  "_comment": "Maps MCP JSON `slug` → folder under content/reviews/. After EEAT MCP runs (Cursor may dump JSON to .cursor/projects/d-AutoMore/agent-tools/), always run: node scripts/save-review-from-mcp-json.mjs --recover-agent-tools [--force]. That writes article.html + injects hero.jpg from the same folder.",
+  "chery-tiggo-4-review-australia": "chery-tiggo-4-review-australia",
+  "haval-jolion-review-australia-common-problems": "gwm-haval-jolion-australia-review",
+  "mg-zs-review-australia-reliability": "mg-zs-zst-australia-review",
+  "byd-atto-3-review-australia": "byd-atto-3-australia-review",
+  "mitsubishi-outlander-2015-review-australia-problems": "mitsubishi-outlander-2015-2021-australia",
+  "hyundai-kona-used-review-australia": "hyundai-kona-pre-2023-australia",
+  "mazda-cx-3-review-australia-used": "mazda-cx-3-australia-review",
+  "kia-cerato-review-australia-used": "kia-cerato-2018-2024-australia",
+  "holden-trax-review-australia-used-problems": "holden-trax-australia-review",
+  "subaru-xv-review-australia-used": "subaru-xv-2017-2022-australia"
+}

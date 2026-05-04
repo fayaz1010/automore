@@ -1,0 +1,66 @@
+What's actually happening in the SERPs
+The big picture: the head terms are locked. carsales, CarsGuide, Drive, CarExpert, ReDriven, and australiancar.reviews dominate any "[make] [model] review" query. ReDriven is particularly relevant for you because they specifically own the "common faults / used car buyer's guide" angle and they've built it on YouTube + site authority. Beating them on their core models is hard.
+But there are exploitable gaps, specifically in three places:
+
+Less-reviewed models that are still selling in volume — particularly the new Chinese brands (Chery, GWM, BYD, MG, Geely, Jaecoo) where the established review sites don't have years of accumulated authority and ReDriven's "common faults" angle literally can't exist yet because the cars are too new.
+State/region-specific buyer queries — "[model] for WA conditions," "best 4WD for Pilbara work," "[model] in Perth." Big sites write nationally; local angles are wide open.
+Specific used-buyer scenarios — "best year for the [model]," "[model] vs [model] for tradies," "should I buy a [year] [model] in 2026" — these are conversion-ready buyer-intent queries that the big sites don't always target with dedicated pages.
+
+Your target list — 30 cars to start
+I've ranked these by opportunity (demand × gap × your ability to add real value), not by sales volume. Volume cars where ReDriven has owned the SERP for three years are deprioritised even though they sell huge numbers.
+Tier 1 — High demand, exploitable gap (start here, 10 reviews)
+These are cars where the major sites have coverage but the SERP isn't dominated by a single deep authority, and where used-buyer intent queries are wide open:
+
+Chery Tiggo 4 (2024-2026) — exploded to #3 in AU sales, basically zero used-buyer review depth yet. Massive opportunity window.
+GWM Haval Jolion (2021-2026) — top 10 seller, "common problems" SERP is thin
+MG ZS / ZST (2018-2025) — huge volume in cheap used market, lots of buyer anxiety, gap on reliability pages
+BYD Atto 3 (2022-2025) — new enough that long-term owner data is just emerging, perfect timing
+Mitsubishi Outlander pre-PHEV (2015-2021) — common used buy, ReDriven covers the new one not these
+Hyundai Kona pre-2023 — top 7 seller, the older diesel/petrol mix has buyer questions
+Mazda CX-3 (2015-2024) — popular used SUV, surprisingly thin "common problems" coverage
+Kia Cerato (2018-2024) — high volume used, low review density on used-buyer queries
+Holden Trax (2013-2020) — orphan brand makes buyers nervous, lots of intent searches, low coverage
+Subaru XV (2017-2022) — hatch-on-stilts, big used market, ReDriven hasn't gone deep
+
+Tier 2 — Volume cars with specific angles (next 10)
+Don't try to outrank ReDriven on "Toyota Hilux common problems." Instead, target specific year ranges, state contexts, or buyer scenarios:
+
+Toyota Hilux N70 (2005-2015) — older gen the big sites under-cover, huge tradie used market
+Ford Ranger PX1 (2011-2015) — pre-Bi-Turbo, specific year angle
+Mazda BT-50 UR (2015-2020) — sister to Ranger, gets less coverage
+Toyota LandCruiser 100 Series (1998-2007) — classic 4WD, owner-info wide open
+Nissan Patrol Y61 (1997-2016) — mining/outback angle, massive WA relevance
+Toyota Prado 120 Series (2003-2009) — older gen with cult buyer base
+Mitsubishi Triton MQ/MR (2015-2023) — high volume tradie ute
+Isuzu D-Max RT (2012-2020) — older D-Max gen, mining state demand
+Ford Everest UA (2015-2022) — first-gen Everest, used buyers asking common questions
+Toyota RAV4 XA40 (2013-2018) — pre-hybrid, popular used family car
+
+Tier 3 — High-margin niches (last 10, do these once Tier 1+2 are indexed)
+Lower volume but very high buyer intent — people researching these are close to buying:
+
+Toyota 86 / Subaru BRZ (2012-2021) — enthusiast buyer searches "best year to buy"
+VW Golf Mk7 (2013-2020) — DSG concerns, lots of search intent on which year is safe
+Holden Commodore VF (2013-2017) — V8/SS used market, post-Holden anxiety
+Ford Focus LW/LZ (2011-2018) — Powershift transmission angle (huge search volume on the gearbox issue)
+Hyundai i30 N (2018-2024) — hot hatch enthusiast buyers
+Mazda MX-5 ND (2015-2024) — used buyer queries on the convertible market
+Suzuki Jimny (2018-2026) — cult following, supply-constrained, high buyer intent
+Jeep Grand Cherokee WK2 (2010-2021) — TIPM problems searches are huge
+Land Rover Discovery 4 (2009-2017) — luxury used buyers researching reliability
+BMW X5 E70/F15 (2007-2018) — German luxury used buyer fear searches
+
+How I'd actually point the MCP at this
+Don't write 30 reviews and dump them. Index in waves so you can see what works:
+Wave 1 (week 1): Tier 1 reviews 1-5 (Chery, Haval, MG, BYD, Outlander). New-brand angle is the highest-leverage. If these index in 4-6 weeks, your domain has authority potential.
+Wave 2 (week 3): Tier 1 reviews 6-10 + Tier 2 reviews 11-13. Mix of buyer-intent and tradie angles.
+Wave 3 (week 6): Whatever else based on what indexed. Double down on whichever Tier worked.
+Each review should target the specific buyer query not the generic model name. Title formula:
+
+[Model] Common Problems and Best Year to Buy in 2026 (Australian Buyer's Guide)
+Is the [Model] Worth Buying Used in 2026? Honest Australian Review
+[Model] vs [Competitor] for Tradies — Which Used Ute Wins?
+
+One honest caveat
+Even at 30 reviews indexed, expect 3-6 months before any meaningful traffic, and the realistic ceiling for a brand-new domain in this space is maybe 5,000-15,000 monthly visits in year one if you execute well. That's $20-100/mo of AdSense plus whatever CarVertical and parts affiliates pull. Worth doing for the cost of MCP runs and your dormant domain — but don't expect viral.
+The Chery Tiggo 4 review is genuinely your best single shot. It's selling like crazy, almost no one has deep used-buyer content on it yet, and ReDriven hasn't owned the SERP. If I could only point your MCP at one car, that's the one.

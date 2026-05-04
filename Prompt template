@@ -1,0 +1,220 @@
+Car Review Template — automore.com.au
+Purpose: Structured prompt template for generating E-E-A-T-aligned car reviews that rank in 2026 Google. Designed for AI generation but with mandatory human/data inputs that signal genuine experience.
+
+INPUT VARIABLES (fill before generation)
+yamlmake: 
+model: 
+variant:           # e.g. "GXL 4x4 Auto"
+year_range:        # e.g. "2018-2023" for a generation review, or single year for new
+body_style:        # SUV / sedan / ute / hatch / wagon / 4WD
+price_range_aud:   # current AU market range
+fuel_type:         # petrol / diesel / hybrid / PHEV / EV
+drive_type:        # FWD / RWD / AWD / 4WD
+target_buyer:      # e.g. "tradies needing dual-cab work ute", "growing family"
+review_angle:      # NEW: "Should you buy in 2026?" / USED: "Is it worth it second-hand?"
+location_context:  # AU-specific: WA / nationwide / Outback / urban
+key_competitors:   # 2-3 direct rivals
+real_world_data:   # mandatory: at least 3 of {fuel test, towing test, owner survey, mechanic input, long drive notes}
+
+REVIEW STRUCTURE
+1. Title (H1)
+Format: [Year/Range] [Make] [Model] [Variant] Review: [Specific Verdict Hook]
+Examples:
+
+2018-2023 Toyota Hilux SR5 Review: Still the Tradie Benchmark, or Time for a Rival?
+2024 BYD Atto 3 Review: The EV That Actually Makes Sense for Australian Families
+
+Rules: Specific year/range. Avoid "ultimate guide" / "best." Verdict should be a real question or claim, not generic.
+2. Lede (50-80 words, no H2)
+Open with one specific observation a real driver would make in the first hour. Not a feature list. Not a brochure quote.
+Good: "After 600km from Perth to Esperance in the Hilux SR5, two things were obvious: the seats are still better than they have any right to be at this price, and the 2.8L diesel still drinks more than Toyota's claim suggests — 9.1L/100km on the highway, not the 7.9 they advertise."
+Bad: "The Toyota Hilux is a popular ute that has been on sale in Australia for many years."
+3. Verdict Box (above-the-fold)
+THE QUICK VERDICT
+Rating: [X/10]
+Best for: [specific buyer in one line]
+Skip if: [specific buyer in one line]
+Price as tested: $[X] drive-away ([state])
+Real-world fuel: [X]L/100km (vs [X] claimed)
+4. What We Actually Did (H2: "How We Tested This [Model]")
+This is the E-E-A-T anchor section. Critical.
+State explicitly:
+
+How long the car was driven (km / days / weeks)
+What conditions (highway / city / off-road / towing / loaded)
+What was measured (fuel, 0-100, payload, etc.)
+Who drove it (name + relevant background — mechanic, long-term owner, tradie, etc.)
+When (month/year — recency matters for Google)
+
+Even short — "We had this Hilux for 4 days and 740km, including a 200km dirt section near Wave Rock and a loaded run with 600kg of timber" — this single paragraph does more for E-E-A-T than 2,000 words of generic prose.
+5. What's New / What's Changed (H2)
+Only relevant for: new model years, facelifts, generation reviews.
+
+Bullet the actual changes vs the previous year/gen
+Flag what's marketing fluff vs what's a real change
+100-150 words max
+
+6. Driving It (H2: "What It's Like to Drive")
+Sub-sections (H3) — pick 3-4 that match the car:
+
+Around town
+On the highway
+Loaded / towing (utes, large SUVs)
+Off-road (4WDs only)
+Twisty roads (performance/sporty cars)
+Charging and range (EVs/PHEVs only)
+
+Each H3: 100-200 words. Specific observations. Numbers where possible. Compare to a named competitor.
+Forbidden phrases: "planted feel," "engaging dynamics," "premium feel," "refined ride." These are AI tells. Replace with concrete observations: "Body roll is noticeable through Reabold Hill's roundabouts but the car settles quickly."
+7. Inside the Cabin (H2)
+Cover, in this order:
+
+Front seat comfort (specific — bolster, lumbar, long-drive verdict)
+Driving position (visibility, wheel reach, dash height for shorter drivers)
+Tech (infotainment lag, CarPlay/Android Auto stability, voice control)
+Storage (real measurements — does a 1.5L bottle fit in the door? phone tray?)
+Back seat (legroom for a 6ft adult behind a 6ft driver, ISOFIX count, air vents)
+Boot (litres claimed vs what fits — a real test like "two large suitcases plus a pram")
+
+8. Fuel / Range / Running Costs (H2)
+Mandatory for ranking on commercial intent queries:
+
+Real-world fuel consumption (your test, not WLTP)
+Service intervals + capped pricing (5-year cost where available)
+Insurance band / typical premium for a 35yo in Perth
+Tyre size + replacement cost
+For EVs: real-world range, charging speeds tested, time to 80% on DC fast
+
+9. Safety (H2)
+
+ANCAP rating + year of test (state both — older ratings are worth less)
+Active safety features list
+One or two real observations: "AEB triggered once unnecessarily on a quiet street; lane-keep is gentle and not annoying"
+
+10. Reliability and Common Issues (H2)
+Critical for used-car reviews. This is where most AI reviews fail and where you can win:
+
+Known issues by year/variant (cite specific TSBs, recalls, or owner complaints)
+Service history red flags to look for
+Mechanic perspective: what fails, what costs to fix
+Resale value trend (3-year and 5-year)
+
+For your site specifically: this is where partnering with the mechanic (even remotely, via a quote per review) gives you a genuine differentiator no AI competitor has.
+11. The Competition (H2)
+Three named rivals. For each:
+
+One-line "why pick this over the [model]"
+One-line "why pick the [model] over this"
+Price comparison (drive-away)
+
+12. Who Should Buy It (H2)
+Two short lists, very specific:
+
+Buy this if: 4-5 specific buyer scenarios
+Look elsewhere if: 3-4 specific dealbreakers
+
+Avoid generic ("if you want a reliable car"). Be concrete ("if you do 80%+ highway driving in WA and want under 8L/100km").
+13. Final Verdict (H2)
+
+Rating with breakdown (Performance / Comfort / Practicality / Value / Reliability — each /10)
+One paragraph summary (60-80 words) that someone could screenshot and share
+A single clear recommendation
+
+14. FAQ (H2)
+Mandatory for SERP features. 5-7 questions. Pull from:
+
+"People also ask" on Google for [make] [model] review
+Real questions from Aussie owner forums (Whirlpool, OzBargain, model-specific FB groups)
+
+Format:
+**Is the [model] reliable?**
+[40-60 word answer with a specific data point]
+
+**How much does a [model] cost to service?**
+[Real numbers]
+Common queries to cover: reliability, common problems, fuel economy, towing capacity (if applicable), best year to buy, vs [biggest competitor].
+15. About the Reviewer / Author Box (mandatory)
+This is the second E-E-A-T anchor. Do not skip.
+ABOUT THIS REVIEW
+Reviewed by: [Name]
+Background: [1-2 sentence credential — "Owns and operates [shop], 20+ years on Toyota diesels" or "Has driven 14 utes commercially across WA mining sites"]
+Test conducted: [Month Year]
+Test vehicle source: [Privately owned / Manufacturer loan / Dealer test drive / Workshop customer]
+Disclosures: [any relationships]
+
+E-E-A-T CHECKLIST (run before publish)
+The MCP should verify each is true before flagging the article ready:
+
+ At least one specific number that's not from the brochure (real fuel, real 0-100, real boot test)
+ At least one named location in Australia (a road, suburb, or region)
+ At least one direct comparison to a specific named competitor
+ At least one negative observation (no review is all positive — Google distrusts these)
+ At least one mechanic/long-term-owner data point for used reviews
+ Author name + credential present
+ Test methodology stated
+ Date of test stated (not just "2026")
+ FAQ has at least 5 questions matching real PAA queries
+ No banned phrases ("planted feel," "premium feel," "ultimate guide," "in this article we'll explore")
+ First-person plural OR first-person singular consistent throughout
+ At least 3 internal links to other reviews on the site (build a hub structure)
+ Schema markup: Review + Vehicle + FAQPage
+
+
+SCHEMA TEMPLATE (JSON-LD)
+json{
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "itemReviewed": {
+    "@type": "Car",
+    "name": "[Year] [Make] [Model] [Variant]",
+    "brand": "[Make]",
+    "model": "[Model]",
+    "vehicleModelDate": "[Year]",
+    "fuelType": "[Fuel Type]",
+    "driveWheelConfiguration": "[Drive Type]"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "[Author Name]",
+    "jobTitle": "[Credential]"
+  },
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "[X]",
+    "bestRating": "10"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Automore",
+    "url": "https://automore.com.au"
+  },
+  "datePublished": "[YYYY-MM-DD]"
+}
+
+PROMPT TO FEED YOUR MCP
+Generate a car review for automore.com.au using the structure in car-review-template.md.
+
+Inputs:
+[paste filled YAML block]
+
+Requirements:
+- 1,800-2,400 words total
+- Australian English (kerb, tyre, kilometre, boot, bonnet, ute, drive-away)
+- Australian context throughout (states, AU pricing, AU climate, AU road conditions)
+- All numbers in metric, prices in AUD
+- Run the E-E-A-T checklist before output
+- Flag any section where real-world data is missing — do not invent it
+
+For sections requiring first-hand data (fuel test, driving impressions, cabin measurements), 
+use placeholders in [BRACKETS] if real data isn't supplied. DO NOT fabricate numbers.
+
+Author: [Name] — [Credential]
+Review date: [Month Year]
+Test source: [Source]
+
+NOTES ON RANKING IN 2026
+Three things that are doing the heavy lifting in this template:
+
+Specific real-world data — The single biggest differentiator from competitors. AI reviews without numbers get flattened. AI reviews with numbers (even if generated alongside actual driving notes) outrank pure-text generic content.
+Named author + credential — Google's helpful content system specifically rewards identifiable expertise. A consistent author with a real bio across all reviews builds topical authority faster than anonymous content.
+Honest negatives — Reviews that flag genuine downsides outperform glowing reviews because they match the "balanced perspective" signal Google's quality raters look for. The MCP should be instructed to find at least 2 real complaints from owner forums for every review.

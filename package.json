@@ -1,0 +1,29 @@
+{
+  "name": "automore-content",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "daily": "node scripts/daily-review-autopilot.mjs",
+    "daily:dry": "node scripts/daily-review-autopilot.mjs --dry-run",
+    "images": "node scripts/fetch-car-hero-images.mjs",
+    "save-from-mcp": "node scripts/save-review-from-mcp-json.mjs --recover-agent-tools",
+    "tier1:images-then-save": "node scripts/tier1-images-then-save-articles.mjs"
+  },
+  "dependencies": {
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.16",
+    "typescript": "6.0.3"
+  }
+}

@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prose inside generated review HTML */
+.review-prose {
+  @apply text-slate-200 leading-relaxed;
+}
+.review-prose h1 {
+  @apply font-display text-3xl sm:text-4xl font-semibold tracking-tight text-white mt-0 mb-6;
+}
+.review-prose h2 {
+  @apply font-display text-xl sm:text-2xl font-semibold text-white mt-12 mb-4 border-b border-white/10 pb-2;
+}
+.review-prose h3 {
+  @apply font-display text-lg font-medium text-road-300 mt-8 mb-3;
+}
+.review-prose p {
+  @apply mb-4 text-slate-300;
+}
+.review-prose ul,
+.review-prose ol {
+  @apply my-4 pl-6 text-slate-300 space-y-2;
+}
+.review-prose a {
+  @apply text-road-400 underline-offset-4 hover:text-road-300 hover:underline;
+}
+.review-prose table {
+  @apply w-full text-sm my-6 border border-white/10 rounded-lg overflow-hidden;
+}
+.review-prose th {
+  @apply bg-ink-800 text-left p-3 text-road-300 font-medium;
+}
+.review-prose td {
+  @apply p-3 border-t border-white/10;
+}
+.review-prose blockquote {
+  @apply border-l-4 border-road-500 pl-4 my-6 italic text-slate-400;
+}
+.review-prose figure.automore-hero {
+  @apply rounded-xl overflow-hidden ring-1 ring-white/10;
+}
+.review-prose figure.automore-hero img {
+  @apply rounded-xl;
+}
+
+.mesh-bg {
+  background:
+    radial-gradient(ellipse 120% 80% at 20% -20%, rgba(245, 158, 11, 0.18), transparent 50%),
+    radial-gradient(ellipse 80% 60% at 100% 0%, rgba(59, 130, 246, 0.12), transparent 45%),
+    linear-gradient(180deg, #0a0c10 0%, #11141c 40%, #0a0c10 100%);
+}

@@ -1,0 +1,77 @@
+{
+  "defaults": {
+    "industry": "automotive media",
+    "targetAudience": "Australian new and used car buyers",
+    "location": "Australia",
+    "wordCount": 2200,
+    "tone": "authoritative",
+    "companyName": "Automore",
+    "companyCredentials": "Independent Australian car reviews at automore.com.au",
+    "authorName": "Automore editorial",
+    "authorCredentials": "Aggregates ANCAP data, recalls, owner forums, and Australian automotive media; no in-house instrumented testing unless explicitly stated in the article.",
+    "topicSlug": "suv-reviews",
+    "urlPrefix": "/reviews/"
+  },
+  "items": [
+    {
+      "id": "toyota-hilux-n70",
+      "folderSlug": "toyota-hilux-n70-australia-review",
+      "status": "pending",
+      "scheduledAfter": null,
+      "searchQuery": "Toyota Hilux N70",
+      "imageAlt": "Toyota Hilux seventh generation ute",
+      "topic": "Australian used buyer guide: Toyota Hilux N70 (2005-2015) — mining and tradie use, common issues, best years, vs Triton and Ranger for WA buyers. Third-person attribution only; no fabricated first-hand tests.",
+      "targetKeyword": "Toyota Hilux N70 used review Australia",
+      "tags": ["Toyota", "Hilux", "ute", "used"],
+      "secondaryKeywords": ["Hilux N70 problems", "Hilux vs Ranger", "Hilux reliability Australia"]
+    },
+    {
+      "id": "ford-ranger-px1",
+      "folderSlug": "ford-ranger-px1-australia-review",
+      "status": "pending",
+      "scheduledAfter": "2026-05-05",
+      "searchQuery": "Ford Ranger PX Australia",
+      "imageAlt": "Ford Ranger PX ute",
+      "topic": "Australian used buyer guide: Ford Ranger PX1 (2011-2015) — pre-Bi-Turbo, common faults, towing, vs Hilux. Aggregate owner and media reports only.",
+      "targetKeyword": "Ford Ranger PX1 used review Australia",
+      "tags": ["Ford", "Ranger", "ute", "used"],
+      "secondaryKeywords": ["Ranger PX problems", "Ranger PX1 towing", "Ranger vs Hilux"]
+    },
+    {
+      "id": "mazda-bt50-ur",
+      "folderSlug": "mazda-bt50-ur-australia-review",
+      "status": "pending",
+      "scheduledAfter": "2026-05-06",
+      "searchQuery": "Mazda BT-50 UR",
+      "imageAlt": "Mazda BT-50 UR ute",
+      "topic": "Australian used buyer guide: Mazda BT-50 UR (2015-2020) — Ranger twin, reliability, resale, tradie angles. Third-person sourcing only.",
+      "targetKeyword": "Mazda BT-50 UR review Australia used",
+      "tags": ["Mazda", "BT-50", "ute", "used"],
+      "secondaryKeywords": ["BT-50 vs Ranger", "BT-50 problems", "BT-50 towing"]
+    },
+    {
+      "id": "toyota-landcruiser-100",
+      "folderSlug": "toyota-landcruiser-100-series-australia",
+      "status": "pending",
+      "scheduledAfter": "2026-05-07",
+      "searchQuery": "Toyota Land Cruiser 100 Series",
+      "imageAlt": "Toyota LandCruiser 100 Series",
+      "topic": "Australian buyer guide: Toyota LandCruiser 100 Series (1998-2007) — outback use, common issues, diesel vs petrol, vs Patrol. No invented road tests.",
+      "targetKeyword": "Toyota LandCruiser 100 Series review Australia used",
+      "tags": ["Toyota", "LandCruiser", "4WD", "used"],
+      "secondaryKeywords": ["100 Series problems", "100 Series best year", "100 Series vs Patrol"]
+    },
+    {
+      "id": "nissan-patrol-y61",
+      "folderSlug": "nissan-patrol-y61-australia-review",
+      "status": "pending",
+      "scheduledAfter": "2026-05-08",
+      "searchQuery": "Nissan Patrol Y61 Australia",
+      "imageAlt": "Nissan Patrol Y61",
+      "topic": "Australian buyer guide: Nissan Patrol Y61 (1997-2016) — WA mining and remote touring, ZD30 vs TB48, common issues. Aggregate reporting only.",
+      "targetKeyword": "Nissan Patrol Y61 review Australia used",
+      "tags": ["Nissan", "Patrol", "4WD", "used"],
+      "secondaryKeywords": ["Y61 ZD30 problems", "Patrol vs LandCruiser", "Y61 towing"]
+    }
+  ]
+}

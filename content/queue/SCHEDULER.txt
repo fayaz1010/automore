@@ -1,0 +1,31 @@
+100% autopilot — daily one review
+================================
+
+1) One-time: npm run build in D:\SaaSApps\mcp-servers\content-eeat-generator
+2) Put UTIL_AI_URL and UTIL_AI_TOKEN in d:\AutoMore\.env (or in the scheduler environment).
+3) Edit content\queue\daily-queue.json — add rows with status "pending". Use scheduledAfter (YYYY-MM-DD) UTC date so only one item is "due" per day, or leave null for "run next".
+4) Daily command (repo root d:\AutoMore):
+     node scripts/daily-review-autopilot.mjs
+   Regenerate same folder: add --force
+
+Windows Task Scheduler
+----------------------
+Trigger: Daily, time e.g. 06:00.
+Action: Start a program
+  Program: C:\Program Files\nodejs\node.exe
+  Arguments: scripts\daily-review-autopilot.mjs
+  Start in: d:\AutoMore
+
+GitHub Actions (cloud)
+----------------------
+The generator lives outside this repo. Options: (a) self-hosted runner on your PC with EEAT_GENERATOR_ROOT pointing at D:\SaaSApps\mcp-servers\content-eeat-generator, or (b) vendor-copy the generator into this repo and set EEAT_GENERATOR_ROOT to ${{ github.workspace }}/vendor/content-eeat-generator, then npm ci && npm run build there before node scripts/daily-review-autopilot.mjs.
+
+Railway cron + Vercel site (recommended)
+---------------------------------------
+1) Vercel: import this Git repo, framework Next.js, set env NEXT_PUBLIC_SITE_URL=https://automore.com.au
+2) util-ai: keep UTIL_AI_URL + UTIL_AI_TOKEN in Railway service env (same values as vault-backed secrets you already use).
+3) EEAT_GENERATOR_ROOT: point at a path inside the Railway image where content-eeat-generator is built (submodule under vendor/ is easiest).
+4) Railway: new service from Dockerfile.railway-daily, add Cron trigger daily, same env as above.
+5) After each article: set GIT_AUTO_PUSH=1 and GITHUB_TOKEN so the job commits + pushes; Vercel production deploy picks up new content/reviews/*/article.html.
+
+Logs: content\queue\daily-log.jsonl

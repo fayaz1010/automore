@@ -1,0 +1,17 @@
+Vercel + GitHub (no secrets in this repo)
+=========================================
+
+1) GitHub repository secrets (Settings → Secrets and variables → Actions):
+   - VERCEL_TOKEN      → from Ozdesk vault key "vercel.token"
+   - VERCEL_ORG_ID     → Vercel dashboard → Team / User settings
+   - VERCEL_PROJECT_ID → Project → Settings → General
+
+2) Vercel project: import the GitHub repo, framework Next.js, root directory "/",
+   set Production env: NEXT_PUBLIC_SITE_URL=https://automore.com.au
+
+3) First-time link (optional, to generate .vercel locally — do not commit .vercel/):
+   npx vercel link
+
+4) Push to `main` runs `.github/workflows/vercel-production.yml` and deploys.
+
+Security: if vault JSON was ever exposed in a chat or log, rotate GitHub + Vercel tokens in GitHub/Vercel settings.
