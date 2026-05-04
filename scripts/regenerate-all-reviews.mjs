@@ -105,7 +105,8 @@ function mergeSlugMap(mcpSlug, folderSlug) {
 }
 
 function keywordFromTier1(entry) {
-  const base = (entry.searchQuery || '').trim();
+  let base = (entry.searchQuery || '').trim();
+  base = base.replace(/\s+car$/i, '').replace(/\s+sedan$/i, '').trim();
   if (!base) return entry.slug.replace(/-/g, ' ');
   const lower = base.toLowerCase();
   if (lower.includes('review') && lower.includes('australia')) return base;
