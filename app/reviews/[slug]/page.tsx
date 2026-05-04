@@ -4,13 +4,18 @@ import { notFound } from 'next/navigation';
 import {
   listReviewSlugs,
   readArticleHtml,
+  readSavedMeta,
   extractTitleFromArticleHtml,
   extractMetaDescription,
   extractBodyInner,
   rewriteMediaSources,
+  stripFirstH1,
+  ensureH2Ids,
+  extractH2Toc,
   SITE_URL,
 } from '@/lib/reviews';
 import { ArticleBody } from '@/components/article-body';
+import { ReviewToc } from '@/components/review-toc';
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -80,6 +85,14 @@ function jsonLdBreadcrumb(slug: string, title: string) {
   };
 }
 
+function formatReviewDate(saved: Record<string, unknown> | null): string | null {
+  const raw = saved?.savedAt;
+  if (typeof raw !== 'string') return null;
+  const d = new Date(raw);
+  if (Number.isNaN(d.getTime())) return null;
+  return d.toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric' });
+}
+
 export default async function ReviewPage({ params }: Props) {
   const { slug } = await params;
   const raw = readArticleHtml(slug);
@@ -87,7 +100,12 @@ export default async function ReviewPage({ params }: Props) {
 
   const title = extractTitleFromArticleHtml(raw);
   const description = extractMetaDescription(raw);
-  const inner = rewriteMediaSources(slug, extractBodyInner(raw));
+  const bodyInner = stripFirstH1(extractBodyInner(raw));
+  const withIds = ensureH2Ids(bodyInner);
+  const inner = rewriteMediaSources(slug, withIds);
+  const toc = extractH2Toc(withIds);
+  const saved = readSavedMeta(slug);
+  const updatedLabel = formatReviewDate(saved);
 
   return (
     <>
@@ -99,8 +117,8 @@ export default async function ReviewPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdBreadcrumb(slug, title)) }}
       />
-      <div className="mx-auto max-w-6xl px-4 pt-8 sm:px-6">
-        <nav className="text-sm text-slate-500 mb-6">
+      <div className="mx-auto max-w-7xl px-4 pt-8 pb-16 sm:px-6 lg:px-8">
+        <nav className="text-sm text-slate-500 mb-8">
           <Link href="/" className="hover:text-road-400">
             Home
           </Link>
@@ -109,10 +127,28 @@ export default async function ReviewPage({ params }: Props) {
             Reviews
           </Link>
           <span className="mx-2">/</span>
-          <span className="text-slate-300 line-clamp-1">{title}</span>
+          <span className="text-slate-400 line-clamp-1">{title}</span>
         </nav>
+
+        <header className="mb-10 max-w-3xl">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-road-500/90 mb-3">Australian car review</p>
+          <h1 className="font-display text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-[2.35rem] leading-tight text-balance">
+            {title}
+          </h1>
+          {updatedLabel && typeof saved?.savedAt === 'string' ? (
+            <p className="mt-4 text-sm text-slate-500">
+              Page updated <time dateTime={saved.savedAt}>{updatedLabel}</time>
+            </p>
+          ) : null}
+        </header>
+
+        <div className="grid grid-cols-1 gap-12 xl:grid-cols-[minmax(0,1fr)_min(260px,28%)] xl:gap-16 xl:items-start">
+          <div className="min-w-0">
+            <ArticleBody html={inner} />
+          </div>
+          <ReviewToc items={toc} />
+        </div>
       </div>
-      <ArticleBody html={inner} />
     </>
   );
 }

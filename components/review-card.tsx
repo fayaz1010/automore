@@ -15,7 +15,7 @@ export function ReviewCard({ slug, title, description }: Props) {
       <div className="relative aspect-[16/10] w-full bg-ink-900 overflow-hidden">
         <img
           src={`/api/media/${slug}`}
-          alt=""
+          alt={title}
           className="absolute inset-0 h-full w-full object-cover opacity-90 transition duration-500 group-hover:opacity-100 group-hover:scale-[1.02]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink-950 via-transparent to-transparent" />
