@@ -12,7 +12,9 @@
     "save-from-mcp": "node scripts/save-review-from-mcp-json.mjs --recover-agent-tools",
     "tier1:images-then-save": "node scripts/tier1-images-then-save-articles.mjs",
     "sync-vercel-secrets": "node scripts/sync-vercel-secrets-to-github.mjs",
-    "link-vercel-github": "node scripts/link-vercel-github.mjs"
+    "link-vercel-github": "node scripts/link-vercel-github.mjs",
+    "regenerate-reviews": "node scripts/regenerate-all-reviews.mjs",
+    "regenerate-reviews:dry": "node scripts/regenerate-all-reviews.mjs --dry-run"
   },
   "dependencies": {
     "next": "^15.1.0",
