@@ -1,6 +1,10 @@
 Vercel + GitHub (no secrets in this repo)
 =========================================
 
+0) If `git push` rejects workflow files: your GitHub token needs the `workflow` scope.
+   Run:  gh auth refresh -h github.com -s workflow
+   Complete the browser/device flow, then push again.
+
 1) GitHub repository secrets (Settings → Secrets and variables → Actions):
    - VERCEL_TOKEN      → from Ozdesk vault key "vercel.token"
    - VERCEL_ORG_ID     → Vercel dashboard → Team / User settings

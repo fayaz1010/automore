@@ -1,0 +1,20 @@
+# Optional: self-hosted runner with EEAT_GENERATOR_ROOT + util-ai env. See content/queue/SCHEDULER.txt
+name: Automore daily review
+on:
+  workflow_dispatch: {}
+  # schedule:
+  #   - cron: "0 9 * * *"
+jobs:
+  daily:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Run daily pipeline
+        env:
+          UTIL_AI_URL: ${{ secrets.UTIL_AI_URL }}
+          UTIL_AI_TOKEN: ${{ secrets.UTIL_AI_TOKEN }}
+          EEAT_GENERATOR_ROOT: ${{ secrets.EEAT_GENERATOR_ROOT }}
+        run: node scripts/daily-review-autopilot.mjs
