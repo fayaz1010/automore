@@ -10,7 +10,8 @@
     "daily:dry": "node scripts/daily-review-autopilot.mjs --dry-run",
     "images": "node scripts/fetch-car-hero-images.mjs",
     "save-from-mcp": "node scripts/save-review-from-mcp-json.mjs --recover-agent-tools",
-    "tier1:images-then-save": "node scripts/tier1-images-then-save-articles.mjs"
+    "tier1:images-then-save": "node scripts/tier1-images-then-save-articles.mjs",
+    "sync-vercel-secrets": "node scripts/sync-vercel-secrets-to-github.mjs"
   },
   "dependencies": {
     "next": "^15.1.0",
