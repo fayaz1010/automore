@@ -12,6 +12,9 @@
  *   node scripts/daily-review-autopilot.mjs --dry-run
  *   node scripts/daily-review-autopilot.mjs --force   # regenerate even if article.html exists
  *
+ * SERP strategy (optional): run `npm run serp-hunt` then `npm run serp-hunt:apply` to prepend
+ * today's best opportunity to daily-queue.json (see content/queue/serp-strategy-latest.json).
+ *
  * Schedule (100% autopilot):
  *   Windows Task Scheduler → daily → Program: node, Args: scripts/daily-review-autopilot.mjs,
  *   Start in: d:\\AutoMore, env vars UTIL_AI_URL / UTIL_AI_TOKEN

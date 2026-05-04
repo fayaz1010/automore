@@ -14,7 +14,9 @@
     "sync-vercel-secrets": "node scripts/sync-vercel-secrets-to-github.mjs",
     "link-vercel-github": "node scripts/link-vercel-github.mjs",
     "regenerate-reviews": "node scripts/regenerate-all-reviews.mjs",
-    "regenerate-reviews:dry": "node scripts/regenerate-all-reviews.mjs --dry-run"
+    "regenerate-reviews:dry": "node scripts/regenerate-all-reviews.mjs --dry-run",
+    "serp-hunt": "node scripts/daily-serp-hunt.mjs",
+    "serp-hunt:apply": "node scripts/daily-serp-hunt.mjs --apply-top"
   },
   "dependencies": {
     "next": "^15.1.0",
