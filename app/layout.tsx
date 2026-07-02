@@ -1,9 +1,12 @@
 import type { Metadata, Viewport } from 'next';
 import { DM_Sans, Outfit } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
 import { SITE_URL } from '@/lib/reviews';
+
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || 'G-GVGLP649J8';
 
 const display = Outfit({
   subsets: ['latin'],
@@ -54,6 +57,17 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <main className="flex-1">{children}</main>
           <SiteFooter />
         </div>
+        {GA_ID ? (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga4" strategy="afterInteractive">
+              {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`}
+            </Script>
+          </>
+        ) : null}
       </body>
     </html>
   );
